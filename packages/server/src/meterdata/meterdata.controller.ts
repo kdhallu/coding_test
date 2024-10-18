@@ -1,19 +1,25 @@
-import {Controller, Get, Param, Query, Post} from '@nestjs/common';
-import {MetricsService} from './metrics.service';
+import {Controller, Get, Query} from '@nestjs/common';
+import {MeterDataService} from './meterdata.service';
 
-@Controller('/metrics')
-export class MetricsController {
-  constructor(private readonly metricsService: MetricsService) {
+@Controller('/meter')
+export class MeterdataController {
+  constructor(private readonly meterDataService: MeterDataService) {
   }
 
-  @Get('')
-  async getMetricsInRangeByOrganisation(
-    @Query('organization') organization: string,
-    @Query('aggregateBy') aggregateBy: string,
+  //@ts-ignore
+  @Get('/measurements')
+  async getMeasurements(
+    @Query('muid') meterId: string,
+    @Query('limit') limit: number,
+    @Query('start') start: string,
+    @Query('stop') stop: string,
   ) {
-    const response = await this.metricsService.getMetricsInRangeByOrganization(
-      organization,
-      aggregateBy
+
+    const response = await this.meterDataService.getMeterMeasurements(
+        meterId,
+        limit,
+        start,
+        stop
     );
     return response;
   }

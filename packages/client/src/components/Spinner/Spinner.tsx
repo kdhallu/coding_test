@@ -10,7 +10,7 @@ const Spinner = () => {
         marginLeft: "100px"
       }}
       indicator={
-        <LoadingOutlined rev={null} style={{ fontSize: 48 }} spin />
+        <LoadingOutlined rev={''} style={{ fontSize: 48 }} spin />
       }
     />
   )

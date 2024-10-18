@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { MetricsService } from './metrics.service';
+import { MeterDataService } from './meterdata.service';
 import { PrismaService } from '~/prisma.service';
 
 @Module({
-  providers: [PrismaService, MetricsService],
-  exports: [MetricsService],
+  providers: [PrismaService, MeterDataService],
+  exports: [MeterDataService],
 })
-export class MetricsModule {}
+export class MeterdataModule {}

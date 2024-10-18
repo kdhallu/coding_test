@@ -1,3 +1,3 @@
-import MeterDropdown from './MeterDropdown';
+import MetersDropdown from './MetersDropdown';
 
-export default MeterDropdown;
+export default MetersDropdown;
