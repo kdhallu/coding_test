@@ -1,12 +1,3 @@
-
-The data for both files was retrieved with requests to our API
-GET /meterdata/measurement
-The parameters for the first file were
-muid=95ce3367-cbce-4a4d-bbe3-da082831d7bd&measurement=energy&limit=5000&start=2023-02-01&stop=2023-03-01
-The parameters for the second file were
-muid=1db7649e-9342-4e04-97c7-f0ebb88ed1f8&measurement=energy&limit=5000&start=2023-02-01&stop=2023-03-01
-While the links that you will be working against only return a raw JSON file, we ask you treat it as if it were a full-fledged API.
-
 ### Task A - Data Exploration
 Explore the data and group it by different time intervals. Explain what you see/what the data represents. Come up with a hypothesis on what kind of data you are looking at.
 Bonus: Check for any autocorrelation within the time-series data.
