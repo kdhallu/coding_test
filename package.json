@@ -1,0 +1,24 @@
+{
+  "name": "exnation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nest start --watch",
+    "start": "nest start"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@nestjs/common": "^9.0.11",
+    "@nestjs/config": "^3.0.0",
+    "@nestjs/core": "^9.0.11",
+    "@nestjs/platform-express": "^9.0.11",
+    "@nestjs/typeorm": "^10.0.2",
+    "@prisma/client": "4.16.2",
+    "@nestjs/cli": "^9.0.0",
+    "@nestjs/schematics": "^9.0.1",
+    "@nestjs/testing": "^9.0.11"
+  }
+}
